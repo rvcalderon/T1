@@ -9,6 +9,7 @@
       <th>Bajada</th>
       <th>Cuerpo</th>
       <th>Comentarios</th>
+      <th>Fecha publicacion</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,6 +21,7 @@
         <td><%= article.drop %></td>
         <td><%= truncate(article.body, length: 1000, separator: ' ') %></td>
         <td><%= article.comments.count %></td>
+        <td><%= article.created_at %></td>
         <td><%= link_to 'Ver mas', article %></td>
       </tr>
     <% end %>
