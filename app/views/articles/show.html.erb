@@ -1,28 +1,28 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Author:</strong>
+  <strong>Titulo:</strong>
   <%= @article.author %>
 </p>
 
 <p>
-  <strong>Drop:</strong>
+  <strong>Bajada:</strong>
   <%= @article.drop %>
 </p>
 
 <p>
-  <strong>Body:</strong>
+  <strong>Cuerpo:</strong>
   <%= @article.body %>
 </p>
-<h2>Comments</h2>
+<h2>Comentarios</h2>
 <% @article.comments.each do |comment| %>
   <p>
-    <strong>Author:</strong>
+    <strong>Autor:</strong>
     <%= comment.author %>
   </p>
 
   <p>
-    <strong>Comment:</strong>
+    <strong>Comentario:</strong>
     <%= comment.content %>
   </p>
 <% end %>
